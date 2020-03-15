@@ -1,0 +1,35 @@
+Hi! Good work so far. Here is some feedback:
+
+-Please try to submit things in individual folders, rather than new repositories.
+ You should only have one respository called CS5003-Spring2020 or something similar,
+ and inside that have your folders with Lab/Assignments names and files inside those.
+ Let me know if you need help creating a new folder in GitHub.
+ 
+-On Lab4 (encrypt) make sure you pay attention to where your lines start and the spacing.
+ For example, here:
+  if not (0 < shift_amount < CHARACTERS_IN_ALPHABET):
+        shift_amount = 1
+        encrypttext = ""
+
+        for c in plaintext:
+            encrypttext += chr((ord(c) - 97 + shift_amount) % 26 + 97)
+
+        return encrypttext
+ Make sure that encrypttext = "" and everything under is not tabbed (aka it starts all the way at the beginning).
+ The same goes for the decrypt function. Right now, it doesn't run properly because the entire function is under the
+ if statement, but you only want "shift_amount = 1" to be inside the if statement.
+ 
+-For Lab 5, I only see the copying a file part, not the encrypting and decrypting portion. If you have this, make sure
+ to submit it, preferably all in the same folder!
+ 
+-There is a small typo in your Lab 6 range() function. Says Life off instead of Lift off. Not a big deal but pay attention 
+ because typos can cause major headaches in other scenarios!
+ 
+-For Q15 finding_distance.py in Midterm (and in general) it's usually better to add a space at the end when asking for an input.
+ It will look better when a user in inputting (will look like Question? Answer instead of Question?Answer) but not a huge deal!
+ Also, you don't need to do print(main()), just main() if your main function is already printing something. You only need to do 
+ print(main()) if the function returns a value you want to print but doesn't print on it's own.
+ 
+Overall great job!
+~Kristina
+  
